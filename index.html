@@ -16,7 +16,39 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <button type="button" class="btn btn-success me-2">Create a new post</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Create a New Post
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a New Post</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <h6 class="caption ms-2">Caption: </h6>
+                      <div class="modal-body">
+                        <input type="text" class="form-control" placeholder="Add the caption of your post here...">
+                        <ul class="nav nav-pills d-flex justify-content-start gap-2 ">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">
+                              <i class="fa-solid fa-camera"></i>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">
+                              <i class="fa-solid fa-location-dot"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Publish</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle rounded bg-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <i class="fas fa-cog ms-1 me-1"></i>
@@ -75,42 +107,43 @@
           </div>
         </div>
       </div>
-      <div class="tab-pane d-flex justify-content-center" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-        <div class="d-flex flex-column align-items-center overflow-auto" style="max-height: 100vh; padding: 1rem;">
-          <div class="card mb-4" style="width: 28rem; height: 36rem;">
-            <h5 class="card-title m-3">My Crazy Dog, Spark!</h5>
-            <img src="https://picsum.photos/id/237/500/500" class="card-img-top" alt="Image 1">
-            <div class="card-body">
-              <h6><strong>204 Likes</strong></h6>
-              <p class="card-text">This is a cute doggo. The perfect post. It's perfect.</p>
-            </div>
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+      <div class="d-flex flex-column align-items-center overflow-auto" style="max-height: 100vh; padding: 1rem;">
+        <div class="card mb-4" style="width: 28rem; height: 36rem;">
+          <h5 class="card-title m-3">My Crazy Dog, Spark!</h5>
+          <img src="https://picsum.photos/id/237/500/500" class="card-img-top" alt="Image 1">
+          <div class="card-body">
+            <h6><strong>204 Likes</strong></h6>
+            <p class="card-text">This is a cute doggo. The perfect post. It's perfect.</p>
           </div>
-          <div class="card mb-4" style="width: 28rem; height: 36rem;">
-            <h5 class="card-title m-3">Vacation time!</h5>
-            <img src="https://picsum.photos/id/342/500/500" class="card-img-top" alt="Image 1">
-            <div class="card-body">
-              <h6><strong>490 Likes</strong></h6>
-              <p class="card-text">Heading out on a journey with friends!</p>
-            </div>
+        </div>
+        <div class="card mb-4" style="width: 28rem; height: 36rem;">
+          <h5 class="card-title m-3">Vacation time!</h5>
+          <img src="https://picsum.photos/id/342/500/500" class="card-img-top" alt="Image 1">
+          <div class="card-body">
+            <h6><strong>490 Likes</strong></h6>
+            <p class="card-text">Heading out on a journey with friends!</p>
           </div>
-          <div class="card mb-4" style="width: 28rem; height: 36rem;">
-            <h5 class="card-title m-3">Such a breathtaking city!</h5>
-            <img src="https://picsum.photos/id/321/500/500" class="card-img-top" alt="Image 1">
-            <div class="card-body">
-              <h6><strong>106 Likes</strong></h6>
-              <p class="card-text">Great views all around.</p>
-            </div>
+        </div>
+        <div class="card mb-4" style="width: 28rem; height: 36rem;">
+          <h5 class="card-title m-3">Such a breathtaking city!</h5>
+          <img src="https://picsum.photos/id/321/500/500" class="card-img-top" alt="Image 1">
+          <div class="card-body">
+            <h6><strong>106 Likes</strong></h6>
+            <p class="card-text">Great views all around.</p>
           </div>
-          <div class="card mb-4" style="width: 28rem; height: 36rem;">
-            <h5 class="card-title m-3">The water is so clear.</h5>
-            <img src="https://picsum.photos/id/126/500/500" class="card-img-top" alt="Image 1">
-            <div class="card-body">
-              <h6><strong>82 Likes</strong></h6>
-              <p class="card-text">Went on a hike today. Beautiful water.</p>
-            </div>
+        </div>
+        <div class="card mb-4" style="width: 28rem; height: 36rem;">
+          <h5 class="card-title m-3">The water is so clear.</h5>
+          <img src="https://picsum.photos/id/126/500/500" class="card-img-top" alt="Image 1">
+          <div class="card-body">
+            <h6><strong>82 Likes</strong></h6>
+            <p class="card-text">Went on a hike today. Beautiful water.</p>
           </div>
         </div>
       </div>
+    </div>
     <script>
       const gridTab = document.getElementById('grid-tab');
       const listTab = document.getElementById('list-tab');
